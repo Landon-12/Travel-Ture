@@ -1,0 +1,90 @@
+.header {
+    position: relative;
+    color: #fff;
+    height: 756px;
+    background-image: url(../images/bg/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding-top: 30px;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__menu {
+       border-bottom: 2px solid rgba(255, 255, 255, 0.356);
+    }
+    &__list {
+        display: flex;
+        margin-bottom: 20px;
+    }
+    &__item {
+        margin-right: 33px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__link {
+        font-weight: 500;
+        font-size: 13px;
+        position: relative;
+        text-transform: uppercase;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 0%;
+            height: 2px;
+            background-color: #fff;
+            bottom: -21px;
+            left: 0;
+            transition: .2s;
+        }
+        &:hover:before {
+            width: 100%;
+        }
+    }
+    &__info {
+        &-link {
+            font-size: 17px;
+        }
+        &-text {
+          display: block;
+          margin-top: 20px;
+          text-align: center;
+        }
+        &-item {
+            transition: opacity .2s linear; 
+            &:hover {
+                opacity: .7;
+              } 
+        }
+    }
+    &__content {
+        margin-top: 98px;
+    }
+    &__title {
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 81px;
+        line-height: 1.2;
+        position: relative;
+        &::after {
+            content: '';
+            width: 225px;
+            height: 2px;
+            background-color: #2886a1;
+            position: absolute;
+            bottom: -21px;
+            left: 10px;
+        }
+    }
+    &__subtitle {
+        margin-top: 45px;
+        color: #95a6ba;
+        font-weight: 500;
+        font-size: 40px;
+        opacity: .7;
+        text-transform: uppercase;
+    }
+}

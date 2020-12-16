@@ -1,0 +1,96 @@
+.setting-tour {
+    position: absolute;
+    margin-top: 165px;
+    margin-left: 137px;
+    color: #252523;
+    background-color: #fff;
+    width: 850px;
+    height: 150px;
+    border-radius: 15px;
+    &__menu {
+        text-align: center;
+        padding-top: 18px;
+        border-bottom: 1px solid #b5bec7;
+    } 
+    &__items {
+        margin-bottom: 15px;
+    }
+    &__link {
+        color: #bfbfbf;
+        font-weight: 500;
+        font-size: 13px;
+        text-transform: uppercase;
+        margin-right: 30px;
+        transition: color .2s linear;
+        position: relative;
+        &:last-child {
+            margin-right: 30px;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            width: 0%;
+            height: 2px;
+            background-color: $blue;
+            left: 0;
+            bottom: -15px;
+            transition: .2s;
+        }
+        &:hover:before {
+            width: 100%;
+        }
+        &:hover {
+            color: $blue;
+        }
+    }
+    &__wrapp {
+        margin-top: 20px;
+        display: flex;
+        padding: 0 17px;
+    }
+    &__card {
+        margin-right: 30px;
+        &-title {
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            font-size: 12px;
+        }
+        &-btn {
+            border: none;
+            background-color: transparent;
+            font-size: 12px;
+            color: $blue;
+            margin-top: 12px;
+            margin-left: 13px;
+            transition: color .2s linear;
+            &:hover {
+                color: #002d61;
+            }
+        }
+        &-select {
+            width: 160px;
+            height: 30px;
+        }
+        &-style {
+            width: 160px;
+            border: 1px solid $blue;
+            color: #2660cc;
+            font-weight: 500;
+            padding-left: 17px;
+            background-color: transparent;
+        }
+        &-input {
+            width: 205px;
+            padding: 5px 10px;
+            &::placeholder {
+                color: #abaaaa;
+            }
+        }
+        &-block {
+            width: 90px;
+            font-size: 12px;
+            color: #abaaaa;
+            font-weight: 500;
+        }
+    }
+}

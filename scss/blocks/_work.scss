@@ -1,0 +1,45 @@
+.work {
+    background-color: #F1F1F3;
+    &__content {
+        text-align: center;
+    }
+    &__subtitle {
+        margin-top: 15px;
+    }
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+    &__card {
+        text-align: center;
+        cursor: pointer;
+        padding: 15px;
+        border-top-left-radius: 20px;
+        &-number {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background-color: $title-color;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 30px;
+            color: #fff;
+            padding-top: 10px;
+            cursor: pointer;
+        }
+        &-title {
+            color: $title-color;
+            font-size: 14px;
+            margin-top: 15px;
+            text-transform: uppercase;
+        }
+        &-desc {
+            color: $text-color;
+            line-height: 1.5;
+            span {
+                text-transform: uppercase;
+            }
+        }
+    }
+}

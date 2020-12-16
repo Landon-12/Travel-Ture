@@ -1,0 +1,155 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-size: inherit;
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+}
+
+body {
+    color: #252523;
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    line-height: 1;
+}
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.logo {
+
+    &__link {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+}
+.g-btn {
+        border: none;
+        background-color: #fd9704;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 12px 52px;
+        border-radius: 20px;
+        font-size: 14px;
+        transition: background-color .2s linear;
+        
+        &:hover {
+            background-color: #2886a1;
+        }
+}
+
+.t1 {
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        background-repeat: no-repeat;
+        background-image: url(../images/icons/calendar.svg);
+        left: 85%;
+        top: 25%;
+    }
+}
+
+.g-title {
+    font-size: 46px;
+    color: #0940a6;
+    position: relative;
+    margin-bottom: 40px;
+    &:after {
+        content: "";
+        width: 37px;
+        height: 3px;
+        background-color: #fc930a;
+        position: absolute;
+        top: 70px;
+        left: 49%;     
+    }
+    span {
+        color: #f99a2d;
+        font-weight: 300;
+    }
+}
+.g-subtitle {
+    font-weight: 300;
+    font-size: 13px;
+}
+.slick {
+    &-arrow {
+        background-color: transparent;
+        border: 1px solid #fd9704;
+        font-size: 0;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        position: relative; 
+    }
+    &-next {
+        position: absolute;
+        top: 90%;
+        left: 55%;
+        z-index: 2;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 237px;
+            height: 1px;
+            background-color: rgba(253, 149, 4, 0.315);
+            left: -980%;
+            top: 65%;
+        }
+    }
+    &-prev {
+        position: absolute;
+        top: 90%;
+        left: 65%;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 237px;
+            height: 1px;
+            background-color: rgba(253, 149, 4, 0.315);
+            right: -980%;
+            top: 65%;
+        }
+    }
+}
+
+.arrow-icon {
+    width: 25px;
+    height: 25px;
+    padding-right: 15px;
+}

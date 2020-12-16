@@ -1,0 +1,150 @@
+.ture {
+    padding-top: 160px;
+    background-color: #f1f1f3;
+    padding-bottom: 100px;
+    &__content {
+        text-align: center;
+    }
+    &__photo {
+        width: 285px;
+        height: 308px;
+        border-top-left-radius: 15px;
+        object-fit: cover;
+        cursor: pointer;
+    }
+    &__info-block {
+        background-color: #fff;
+        width: 250px;
+        height: 419px;
+        cursor: pointer;
+    }
+    &__items {
+       margin-top: 50px;
+       display: flex;
+       justify-content: space-between;
+       flex-wrap: wrap;
+    } 
+    &__card {
+        display: flex;
+    }
+    &__photo {
+        width: 375px;
+        height: 419px;
+    }
+    &__info-block {
+        width: 350px;
+        padding: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    &__titl {
+        font-size: 21px;
+        font-weight: 400;
+        line-height: 1.5;
+        margin-bottom: 15px;
+    }
+    &__name {
+        display: inline-block;
+        background-color: $btn-color;
+        box-shadow: 2px 4px 14px $btn-color;
+        color: #ffff;
+        font-size: 12px;
+        padding: 6px 16px;
+        border-radius: 20px;
+        margin-bottom: 18px;
+        text-transform: uppercase;
+    }
+    &__list {
+
+    }
+    &__link {
+        color: $list-color;
+        margin-bottom: 18px;
+        span {
+            color: $accent;
+            font-weight: 500;
+        }
+    }
+    &__desc {
+        color: #494949;
+        font-size: 14px;
+        line-height: 1.3;
+    }
+    &__pic {
+        display: inline-block;
+        background-color: $accent;
+        box-shadow: 2px 4px 12px $accent;
+        color: #fff;
+        padding: 10px 15px;
+        border-radius: 20px;
+        span {
+            font-size: 14px;
+            font-weight: 300;
+        }
+    }
+    &__zahabita-block {
+        position: relative;
+    }
+    &__zahabita-name {
+        position: absolute;
+        right: 0px;
+        top: 18px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    &__zahabita-pic {
+        position: absolute;
+        left: 0px;
+        top: 150px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        background-color: #fff;
+        font-weight: 500;
+        color: $accent;
+        box-shadow: 2px 4px 12px #fff;
+        span {
+            color: #333;
+            font-weight: 300px;
+        }
+    }
+    &__zahabita{
+        display: block;
+    }
+    &__photo-zahabita {
+        height: 241px;
+    }
+    &__info-zahabita {
+        width: 375px;
+        height: 172px;
+    }
+    &__bott {
+        margin-top: 35px;
+        margin-right: -35px;
+    }
+    &-btn {
+        display: block;
+        margin: 40px auto;
+        position: relative;
+        box-shadow: 2px 4px 20px $btn-color;
+        &:hover {
+            box-shadow: 2px 4px 20px $blue;
+        }
+        &::after {
+           content: '';
+           position: absolute;
+           width: 200px;
+           height: 1px;
+           background-color: rgba(253, 149, 4, 0.301);
+           right: -100%;
+           top: 50%;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            width: 200px;
+            height: 1px;
+            background-color: rgba(253, 149, 4, 0.301);
+            left: -100%;
+            top: 50%;
+         }
+    }
+}

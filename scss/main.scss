@@ -1,0 +1,38 @@
+// global basic style 
+@import './global';
+
+// fonst style
+@import './fonts';
+
+// basic settings color
+@import './vars';
+
+// media style
+@import './media';
+
+
+// blocks style connection
+
+// header style 
+@import './blocks/header';
+
+// setting-tour
+@import './blocks/setting-tour';
+
+// ture
+@import './blocks/ture';
+
+// work 
+@import './blocks/work';
+
+// recommend
+@import './blocks/recommend';
+
+// prices
+@import './blocks/prices';
+
+// banner
+@import './blocks/banner';
+
+// footer
+@import './blocks/footer';

@@ -1,0 +1,103 @@
+.prices {
+    background-color: #F1F1F3;
+    padding-bottom: 60px;
+    &__content {
+        text-align: center;
+    }
+    &__subtitle {
+        margin-top: 20px;
+    }
+    &__item {
+        margin-top: 50px;
+    }
+    &__item {
+        &-wrapp {
+            display: flex;
+        }
+        &-form {
+          width: 320px;
+          background-color: $title-color;
+          text-align: center;
+          padding-bottom: 30px;
+          border-top-left-radius: 20px;
+          border-bottom-right-radius: 20px;
+        }
+        &-title {
+            color: #fff;
+            padding-top: 30px;
+            font-size: 28px;
+            line-height: 1.5;
+            text-transform: uppercase;
+            font-weight: 400;
+            margin-bottom: 25px;
+        }
+        &-subtitle {
+            color: #fff;
+            margin-bottom: 25px;
+        }
+        &-input {
+            width: 258px;
+            margin-bottom: 20px;
+            border-radius: 30px;
+            background-color: transparent;
+            border: 1px solid #fff;
+            padding: 10px;
+            font-size: 14px;
+            color: #fff;
+            &:focus {
+                outline: none;
+            }
+            &::placeholder {
+                color: #fff;
+            }
+        }
+        &-btn {
+            margin-top: 26px;
+        }
+    }
+    &__block {
+        margin-left: 36px;
+     &-wrapp {
+    }   display: flex;
+&-item {
+    margin-left: 150px;
+}
+    }
+    &__card {
+        margin-bottom: 50px;
+
+        &-title {
+            text-transform: uppercase;
+            color: $text-color;
+            font-weight: 500;
+            margin-bottom: 25px;
+        }
+        &-pic {
+            color: $accent;
+            span {
+                font-weight: 700;
+            }
+        }
+        &-photo {
+            width: 75px;
+            height: 75px;
+            border-radius: 20px;
+            object-fit: cover;    
+        }
+        &-block {
+            display: flex;
+            align-items: center;
+        }
+        &-pice {
+            display: flex;
+            align-items: center;
+        }
+        &-info {
+            margin-left: 30px;
+        }
+        &-arrow {
+            width: 100px;
+            height: 17px;
+        }
+    }
+}

@@ -1,0 +1,58 @@
+.footer {
+    margin-top: 50px;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__desc {
+        margin-top: 20px;
+        font-weight: 300;
+        line-height: 1.5;
+    }
+    &__wrapp {
+        display: flex;
+    }
+    &__card {
+        margin-right: 30px;
+    }
+    &__menu {
+        display: flex;
+    }
+    &__list {
+        margin-right: 50px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__items {
+        color: $title-color;
+        font-weight: 500;
+        font-size: 18px;
+        text-transform: uppercase;
+        margin-bottom: 24px;
+    }
+    &__item {
+        font-weight: 300;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+    &__phone {
+        line-height: 1.5;
+        font-weight: 500;
+    }
+    &__addres {
+        line-height: 1.7;
+    }
+    &__border {
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 230px;
+            height: 1px;
+            background-color: $title-color;
+            right: 60px;
+            top: 7px;
+        }
+    }
+}
